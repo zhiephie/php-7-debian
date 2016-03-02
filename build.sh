@@ -23,7 +23,7 @@ sudo apt-get install -y \
 
 sudo mkdir /usr/local/php7
 
-git clone https://github.com/php/php-src.git
+git clone https://github.com/php/php-src.git --depth=1
 cd php-src
 git checkout PHP-7.0.2
 git pull
@@ -71,4 +71,5 @@ CONFIGURE_STRING="--prefix=/usr/local/php7 \
 ./configure $CONFIGURE_STRING
 
 make
+make test
 sudo make install
