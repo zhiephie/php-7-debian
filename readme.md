@@ -123,7 +123,7 @@ and then build and install the extension:
 	$ git checkout -b php7 origin/php7
 
 	$ /usr/local/php7/bin/phpize
-	$ ./configure --with-php-config=/usr/local/php7/bin/php-config
+	$ ./configure --with-php-config=/usr/local/php7/bin/php-config --disable-memcached-sasl
 	$ make
 	$ sudo make install
 
